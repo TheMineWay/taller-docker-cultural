@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web:
+    # image: php:8.0-apache # La versión de PHP se puede modificar a placer. Revisa la lista de versiones disponibles que incluyen Apache2 (https://hub.docker.com/_/php/tags?page=1&name=-apache)
+    container_name: web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./web:/var/www/html
+    ports:
+      - 80:80
+      - 443:443 # El puerto de la izquierda representa el puerto externo (el que se usa para acceder)
+    expose:
+      - 80
+      - 443
+
+  database:
+    image: mysql:latest
+    container_name: MySQL_database
+    environment:
+      MYSQL_ROOT_PASSWORD: example # Modificad la contraseña siempre que no queráis que nadie os rompa la DB
+    ports:
+      - 3306:3306 # El puerto de la izquierda representa el puerto externo (el que se usa para acceder)
+    expose:
+      - 3306

@@ -1,0 +1,11 @@
+/* Estos estilos estarán disponibles en cualquier página que use el layout global */
+
+.full-center {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
