@@ -10,3 +10,20 @@ div.container {
 h1, h2, small {
     text-align: center;
 }
+
+h1 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+h1.won {
+    color: rgb(12,198,12);
+}
+h1.lost {
+    color: rgb(198,12,12);
+}
+
+p#failed-letters {
+    padding-top: 2em;
+    letter-spacing: 0.15em;
+}
