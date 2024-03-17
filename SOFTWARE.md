@@ -1,5 +1,19 @@
 # 🛠️ Programas y extensiones
 
+## Permisos de Docker
+
+Creamos el grupo:
+
+```bash
+sudo groupadd docker
+```
+
+Añadimos el usuario al grupo:
+
+```bash
+sudo usermod -aG docker $USER
+```
+
 ## Git
 
 Necesitamos instalar **git**:
