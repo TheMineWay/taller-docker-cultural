@@ -25,3 +25,5 @@ services:
       - 3306:3306 # El puerto de la izquierda representa el puerto externo (el que se usa para acceder)
     expose:
       - 3306
+    volumes:
+      - ./db_data:/var/lib/mysql
