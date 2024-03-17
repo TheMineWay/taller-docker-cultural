@@ -2,7 +2,7 @@
     $storedConnection = null;
 
     function openConnection() {
-        $hostname = "host.docker.internal"; // Apuntamos a la dirección del propio contenedor
+        $hostname = "database"; // Apuntamos a la dirección del contenedor de la base de datos
         $username = "root";
         $password = "example";
     

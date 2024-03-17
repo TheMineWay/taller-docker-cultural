@@ -2,6 +2,7 @@
     require("../__internal__/utils/db.php");
 
     $rows = query("SHOW TABLES LIKE 'frases';");
+    var_dump($rows);
     
     if (count($rows) > 0) {
         http_response_code(200);
