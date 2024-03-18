@@ -44,3 +44,5 @@ Una vez este proceso haya finalizado se debería haber generado una tabla llamad
 Ahora ya tenemos el proyecto montado y funcionando. Si le dáis a jugar se abrirá una página con un minijuego (así le damos un poco de contenido a la web, que queda mejor que una pantalla con un título 😁).
 
 **Podéis consultar la arquitectura del proyecto [aquí](./ARCHITECHTURE.md)**
+
+**Podéis consultar algunos recursos interesantes [aquí](./INTERESTING.md)**
